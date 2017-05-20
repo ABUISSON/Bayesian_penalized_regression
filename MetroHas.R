@@ -5,7 +5,7 @@ library("matrixStats")
 ### we import the data
 setwd("/Users/arnaudb/Desktop/montecarlo")
 bos2 = read.xls ("Bostonhousing.xls", sheet=1, header=TRUE)
-bos=bos2 = read.xls ("boston1.xls", sheet=1, header=TRUE)
+bos=read.xls ("boston1.xls", sheet=1, header=TRUE)
 bos <- subset(bos, select = -c(X,X.1,X.2,X.3,X.4) )
 bos$cons <- matrix(1,nrow(bos),1)
 
